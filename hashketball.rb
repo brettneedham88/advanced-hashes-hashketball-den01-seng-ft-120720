@@ -162,16 +162,6 @@ end
 
  
 
-def player_numbers(team_name)
-  jersey_numbers = []
-  game_hash.each do |visitor_status, team_data|
-    binding.pry
-    team_data[:players].each do |player_stats|# returns array of hashes
-     jersey_numbers << player_stats[:number]
-    end
-  end 
-  return jersey_numbers
-end
    
      
      
